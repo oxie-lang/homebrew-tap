@@ -1,25 +1,25 @@
 class Oxie < Formula
   desc "Command line tool and language server for the Oxie programming language"
   homepage "https://oxie.bkymz.net"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/oxie-lang/oxie/releases/download/v0.5.0/oxie-aarch64-apple-darwin.tar.xz"
-      sha256 "be8f43467081a224a6c0ca9d549d7421269d1fdc20afe397107749104642754b"
+      url "https://github.com/oxie-lang/oxie/releases/download/v0.6.0/oxie-aarch64-apple-darwin.tar.xz"
+      sha256 "d9ee7461faa195559d482678e66675055b04cde0045dfe22cb9c0fc4de9e0b04"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oxie-lang/oxie/releases/download/v0.5.0/oxie-x86_64-apple-darwin.tar.xz"
-      sha256 "676f53855d1900c4387d7ece305530023a233da7e71f17d7cc96aab515b13c88"
+      url "https://github.com/oxie-lang/oxie/releases/download/v0.6.0/oxie-x86_64-apple-darwin.tar.xz"
+      sha256 "b9b5b5cbbe7f8d8b2bc4f35ac71b3d0bf93d880f1104950c83876a21bbdb7943"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/oxie-lang/oxie/releases/download/v0.5.0/oxie-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "183d78fc296b2d94f8f72df43509d13f67b0b2ac1fd80f094429097c5832e4d3"
+      url "https://github.com/oxie-lang/oxie/releases/download/v0.6.0/oxie-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5c5ec2ca2138bef356f305e5cda691843c7ab4fa1ba8ab1e28446687e7c40490"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/oxie-lang/oxie/releases/download/v0.5.0/oxie-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "953aaf9b9938527b59b9192f5d744438b45515b11ae0fc28b34d1f62022f3594"
+      url "https://github.com/oxie-lang/oxie/releases/download/v0.6.0/oxie-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "62b26d31088254fe615ffbba1998eb28af9d8b45aa003ba2a4612112bd32d861"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
